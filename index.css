@@ -45,9 +45,11 @@ body {
     /*font-family: 'Press Start 2P', cursive;*/
     font-family: 'VT323', monospace;
     /*font: 16px/20px 'Cutive Mono', serif;*/
-    font-size: 200%;
+    font-size: 250%;
     color: #008F11;
     overflow: none;
+    line-height: 30px;
+    /*align-self: center;*/
 }
 
 a {
