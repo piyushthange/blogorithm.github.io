@@ -48,7 +48,7 @@ body {
     font-family: 'Courier', monospace;
     /* font: 'Tlwg Typewriter Bold', mono; */
     /*font: 16px/20px 'Cutive Mono', serif;*/
-    font-size: 150%;
+    font-size: 125%;
     color: #008F11;
     overflow: none;
     line-height: 30px;
@@ -302,4 +302,42 @@ a.button:hover {
 }
 .icons-sizes {
     width: 20%;
+}
+.slider-container {
+    width: 100%;
+    padding: 0px 13px;
+    position: relative;
+}
+.slider-content {
+    min-width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+#slider {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.slider-buttons {
+    top: 50%;
+}
+.prev-button {
+    position: absolute;
+    top: 40%;
+    left: 3vw;
+    background-color: rgba(156, 149, 149, 0.7);
+    outline: none;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+.next-button {
+    position: absolute;
+    top: 40%;
+    right: 3vw;
+    background-color: rgba(156, 149, 149, 0.7);
+    outline: none;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50%;
 }
