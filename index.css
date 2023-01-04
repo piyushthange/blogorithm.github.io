@@ -275,7 +275,7 @@ a.button:hover {
     box-shadow:0 0 7px rgba(36,198,224,1.0); 
 }    
 
-.grid {
+/* .grid {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-}
+} */
