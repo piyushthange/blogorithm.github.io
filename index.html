@@ -2,129 +2,48 @@
 <html lang="en">
 
 <head>
-
-  <meta charset="UTF-8">
-  <!-- LinkedIn tags start -->
-  <meta property='og:title' content='Blogorithm of Pi' />
-  <meta property='og:image' content='./git.png' />
-  <meta property='og:description' content='Blog for basic and intros for the new cotributors.' />
-  <meta property='og:url' content='https://its-crypted.github.io/blogorithm.github.io/index.html' />
-  <!-- LinkedIn tags end -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta name="google-site-verification" content="tm5Y6ZNTf-lBqbwniGjQPv1q02o2TuUQZ9GTYa4SMLg" /> -->
+  <title>Blog of &pi;</title>
   <link rel="shortcut icon" href="./path2450.png" />
 
-  <!------------------------------ Extra Links ---------------------------->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <title>Blog of &pi;</title>
-  <link rel="stylesheet" href="./index.css">
+  <!-- <meta name="description"
+    content="A minimal, almost class-less CSS library to write modern websites that look like LaTeX documents." /> -->
+  <!-- <meta name="keywords" content="latex.css,css library,class-less css,latex css" />
+  <meta property="og:title" content="LaTeX.css" />
+  <meta property="og:url" content="https://latex.now.sh" /> -->
+  <!-- <meta property="og:description"
+    content="A minimal, almost class-less CSS library to write modern websites that look like LaTeX documents." />
+  <meta property="og:type" content="website" /> -->
 
-  <!-- who am i font -->
-  <link href="https://fonts.googleapis.com/css2?family=Geo&display=swap" rel="stylesheet">
-  <!-- xxxxxxxxx  -->
-
-  <!---------------------------- Social Icons------------------------>
-  <link rel="stylesheet" type="text/css" href="./theme/button">
-
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="prism/prism.css" />
 </head>
 
-<body onload="typeWriter()" style="background-color: #7a7a7a;">
-  <!-------------------------------Header box --------------------------------->
-  <!-- <div class="box">
-    <div class="logo">
-      <img src="./img/Finallogoc.gif" alt='design' width="240" height="240">
-    </div>
-    <div class="content">
-      <p class="tag">
-        <span style="color: #42b51b;">$ </span><span style="color:#aab5b4;">Hello, World!</span><a
-          class="blink_me">_</a>
-      </p>
-      <p class="intro-para" id="demo"></p>
-      <p hidden id="para"> Welcome to the Blogorithm of &#x03C0. The blog Describes, Derives and Defines the working
-        mechanics of COMPUTER system, Scripts languages and my personal experiences with machine. A systematic and clean
-        way to understand the machines and make 'em function as you desire.</p>
-    </div>
-  </div> -->
-  <!-----------------------------------x- Header box End -x ------------------------------>
-
-  <!-- Grid -->
-  <div class="w3-row block2">
-    <div class="w3-col l7 s12">
-      <!-- 1st Blog entry -->
-      <div class="w3-card-4 w3-margin" style="background-color: black;">
-        <div class="w3-container">
-          <h3><a style="color: rgb(223, 221, 221); font-family: 'typewriter', Courier; font-size: 20px;" href="./themes/blog-1/b1.html">
-              <b>1. I'm a Kernel <em>NEWBIE</em> & Where do I start from?<img src="./img/tuxx.png"></b></a></h3>
-          <!-- <h5 style="color: grey; font-family: 'typeWriter';">
-            This blog which will get you started with what "Linux Kernel" is and how the
-            Kernel development is being done proceeds.</h5> -->
-        </div>
-      </div>
-      <!-- 1st end here -->
-      <!-- 2nd start here -->
-
-   </div>
-
-<!------------------------------- Introduction menu ------------------------------------------->
-  
-  <div class="w3-col l3">
-    <!-- About Card -->
-    <div class="w3-card w3-margin w3-margin-top w3-dark-grey">
-      <div class="grid">
-        <!-- <div style="display: flex; margin: 3px 4px;">
-          <img src="./img/pic.jpg" style=" width:55%">
-        </div> -->
-        <div style="margin-top: 5%; margin-left: 10%;">
-          <strong style="color: rgb(0, 0, 0);">Active ON</strong> <br>
-          <a href="https://github.com/its-crypted" target="_blank">
-            <img src="./img/gith.png" style="width:15%">
-          </a>
-          <a href="https://www.instagram.com/piyushthange/?hl=en" target="_blank">
-            <img src="./img/instagram.png" style="width: 15%;">
-          </a>
-          <a href="https://www.linkedin.com/in/piyushthange/" target="_blank">
-            <img src="./img/ln.png" style="width: 15%;">
-          </a>
-          <a href="https://twitter.com/piyushthange" target="_blank">
-            <img src="./img/tweet.png" style="width: 15%;">
-          </a><br>
-          <em style="color: rgb(0, 0, 0);">IRC-Freenode/OFTC: p|yush</em><br>
-        </div>
-      </div>
-<!-- 
-      <div class="w3-container" style="color: black;">
-        <h4 style="text-align: center; font-family:'Geo', sans-serif;">Who Am I?</h4>
-        <p style="font-family:'Geo', sans-serif; font-size: 20px;"> Hello, World! I'm Piyush & I'm documenting my
-          experiences about
-          <strong> <em> LINUX KERNEL.</em></strong> & <em><strong> System Programming</strong></em> and development of
-          kernel.
-        </p>
-      </div> -->
-    </div>
-  </div>
-  </div>
-  <!-- END GRID -->
-
-  <!-- -------writerscript----- -->
-
-  <script>
-    var i = 0;
-    var txt = document.getElementById("para").innerHTML;
-    var speed = 25;
-
-    function typeWriter() {
-      if (i < txt.length) {
-        document.getElementById("demo").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-      }
-    }
-
-    $(document).ready(function () {
-      $('#dtBasicExample').DataTable();
-      $('.dataTables_length').addClass('bs-select');
-    });
-  </script>
-  <!--x -------writerscript----- x-->
+<body id="top" class="latex-dark">
+  <header>
+	<h1>The Kernel Log</h1>
+	<p class="author">-- Piyush Thange</p>
+	<div class="grid">
+		<a href="https://github.com/piyushthange">
+			<img src="img/github.png" alt="" style="width: 30%;">
+		  </a><!-- other logos -->
+		  <a href="https://www.instagram.com/piyushthange/?hl=en" target="_blank"><img src="./img/instagram.png" style="width: 30%;">
+		  </a>
+		  <a href="https://www.linkedin.com/in/piyushthange/" target="_blank"><img src="./img/linkedin.png" style="width: 30%;">
+		  </a>
+		  <a href="https://twitter.com/piyushthange" target="_blank">
+			  <img src="./img/twitter.png" style="width: 30%;">
+		  </a>
+	</div>
+	<hr>
+</header>
+	<h3><a style="color: rgb(223, 221, 221); font-family: 'typewriter', Courier; font-size: 20px;" href="themes/b1.html">
+		<b>1. I'm a Kernel <em>NEWBIE</em> & Where do I start from?<span>
+			<img src="./img/tuxx.png">
+		</span></b></a> 
+	</h3>
 </body>
 
 </html>
