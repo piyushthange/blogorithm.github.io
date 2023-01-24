@@ -103,7 +103,7 @@
   :root {
 	--body-color: hsl(0, 5%, 10%);
 	--body-bg-color: hsl(210, 20%, 98%);
-	--link-visited: hsl(0, 100%, 33%);
+	--link-visited: hsl(0, 0%, 0%);
 	--link-focus-outline: hsl(220, 90%, 52%);
 	--pre-bg-color: hsl(210, 28%, 93%);
 	--kbd-bg-color: hsl(210, 5%, 100%);
@@ -116,7 +116,7 @@
   .latex-dark {
 	--body-color: hsl(0, 0%, 86%);
 	--body-bg-color: hsl(0, 0%, 16%);
-	--link-visited: hsl(196 80% 77%);
+	--link-visited: rgb(255, 255, 255);
 	--link-focus-outline: hsl(215, 63%, 73%);
 	--pre-bg-color: hsl(0, 1%, 25%);
 	--kbd-bg-color: hsl(0, 0%, 16%);
