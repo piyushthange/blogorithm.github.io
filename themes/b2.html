@@ -23,6 +23,8 @@ A patch is a change made in the kernel source & this can be send through mail.
 To create a patch git is the tool in hand for us.
 we can use <code> git format-patch -1 </code>
 After formatting patches you can check who's exactly the mainter of that subsystem using <code>scripts/get_maintainer.pl name.patch </code>
+
+To check if the patch has coding style correct or not you can use <code>scripts/checkpatch.pl filename</code>
 <h3>Mail clients & how to not let them suck your brain</h3>
 There are multiple email clients such as mutt, claws, evolution, thunderbird,etc. Now as we are quite new to this environment I'll prefer to choose thunderbird as it's GUI based & I think it ships with major distributions in the market like ubuntu.
 
