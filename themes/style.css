@@ -243,7 +243,7 @@
   }
   
   /* Styles for inline code or code snippets */
-  code,
+  /* code,
   pre,
   kbd {
 	font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
@@ -267,7 +267,7 @@
 	border-radius: 2px;
 	padding: 2px 4px;
 	font-size: 75%;
-  }
+  } */
   
   /* Better tables */
   table {
