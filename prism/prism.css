@@ -32,23 +32,27 @@ pre[class*=language-] {
 
 :not(pre)>code[class*=language-],
 pre[class*=language-] {
-    background: #4c3f33
+    background: #000000
 }
 
 pre[class*=language-] {
     padding: 0.5em;
     margin: em 0;
     overflow: auto;
-    /* border: .3em solid #7a6651; */
-    /* border-radius: .5em; */
-    /* box-shadow: 1px 1px .5em #ffffff inset */
+    border: .3em solid #2e2e2e;
+    border-radius: .5em;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px
+        /* box-shadow: 1px 1px .5em #ffffff inset */
 }
 
 :not(pre)>code[class*=language-] {
     padding: .15em .2em .05em;
     border-radius: .3em;
-    border: .13em solid #7a6651;
-    box-shadow: 1px 1px .3em -.1em #000 inset;
+    border: .13em solid #2e2e2e;
+    /* box-shadow: 1px 1px .3em -.1em #000 inset; */
     white-space: normal
 }
 

@@ -5,13 +5,13 @@
 <title>1st Blog</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="../prism/prism.css">
-	<link rel="stylesheet" href="https://latex.now.sh/prism/prism.css">
-
-<script src="../prism/prism.js"></script>
+	<script src="../prism/prism.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body id="top" class="latex-dark">
+	<label for="sn-plus" class="sidenote-toggle">⊕</label><input type="checkbox"
+		id="sn-plus" class="sidenote-toggle" /><span class="sidenote"><span id="dark-mode-toggle"><img src="../img/tuxx.png" style="width: 10%;"></span>D/L</span>
 	<div class="main-wrapper">   
 		<div class="content-page">
       		<h1> The Environment Setup </h1>
@@ -25,18 +25,18 @@ Let's get started with a new session with understanding some new term's like Mai
 The kernel development takes place on mailing lists. Make changes in the kernel test them create a patch send them to respective maintainer & mailing list. Get the patch reviewed & accepted or rejected that's it.
 A patch is a change made in the kernel source & this can be send through mail.
 To create a patch git is the tool in hand for us.
-we can use <code> git format-patch -1 </code>
-After formatting patches you can check who's exactly the mainter of that subsystem using <code>scripts/get_maintainer.pl name.patch </code>
+we can use <code class="language-bash"> git format-patch -1 </code>
+After formatting patches you can check who's exactly the mainter of that subsystem using <code class="language-bash">scripts/get_maintainer.pl name.patch</code>
 
-To check if the patch has coding style correct or not you can use <pre><code class="language-bash">scripts/checkpatch.pl filename</code></pre>
-<pre style="padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;">
-	<code class="language-c"	>
-		#include &lt;stdio.h&gt;
-		#include <time.h>
-		int main(){
-			printf("Hello, World\n");
-		}
-	</code>
+To check if the patch has coding style correct or not you can use <code class="language-bash">scripts/checkpatch.pl filename</code>
+<pre>
+<code class="language-c">
+	#include &lt;stdio.h&gt;
+	#include <time.h>
+	int main(){
+		printf("Hello, World\n");
+	}
+</code>
 </pre>
 <h3>Mail clients & how to not let them suck your brain</h3>
 There are multiple email clients such as mutt, claws, evolution, thunderbird,etc. Now as we are quite new to this environment I'll prefer to choose thunderbird as it's GUI based & I think it ships with major distributions in the market like ubuntu.
@@ -45,6 +45,12 @@ There are multiple email clients such as mutt, claws, evolution, thunderbird,etc
 </p>
 That's a short summary for License now let's move forward & get into some real thing that i
 <p style="font-size: 20px">Back to <a href="../index.html">HOME</a>.
+	<script>
+		const darkModeToggle = document.getElementById('dark-mode-toggle')
+		darkModeToggle.addEventListener('click', () => {
+			document.body.classList.toggle('latex-dark')
+		})
+	</script>
 </p>
 </div>
 </div>
