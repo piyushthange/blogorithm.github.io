@@ -19,44 +19,44 @@
 	<div id="main-wrapper">
 		<div class="content-page">
 			<p style="color: red;"> *Note: Reading is the most "CRUCIAL" part of Kernel Development & I quote myself
-				"With great Reading comes great Knowledge & desire to create something." You must have good knowledege
-				of C, Git, handy Linux Command line & OS(Basic concepts) to get started with this development series.
+				"With great Reading comes great Knowledge & desire to create something." You must have good knowledge
+				of C, Git, handy Linux Command line & OS (Basic concepts) to get started with this development series.
 			</p>
-
-			<p>The first question you should ask yourself is "WHAT's the reason you landed here?" It could be anything
-				like your boss told you to learn something about kernel/subsystem OR you just want to explore the kernel
-				world for fun OR you want to get started with kernel development but don't know where and how to start
+			<h3>init</h3>
+			<p>The first question you should ask yourself is "What is the reason you landed here?" It could be anything
+				like your boss told you to learn something about Kernel/subsystem OR you just want to explore the Kernel
+				world for fun OR you want to get started with Kernel development but don't know where and how to start
 				i.e what's the 0<sup>th</sup> bit and how to turn it to 1 and so on...<br>
 				For me it's simple I desire to be a <em>"Kernel developer"</em> it's funny but this name really
-				fascinates me. So I hope you have got the answer and now we move on to our opening move.
+				fascinates me. So I hope you have got your answer and now we move on to our opening move.
 			</p>
 
 			<p>
 			<h3>What is <em>KERNEL</em>?</h3>
 			Have you ever wondered how an editor works or how the game starts and why does the game has a fancy
 			<em>Loading...</em>
-			bar at the beginning? Why you need a big chunkier graphics card to play games? How are these graphics card, RAM, CPU, Display interacting with each other.
+			bar at the beginning? Why you need a big chunkier graphics card to play games? How are these resources (graphics card, RAM, CPU, Display) interact with each other so that you can enjoy your game.
 			The answer to these questions is the Operating System which is synonymously used for KERNEL. The main function of the
-			kernel
+			Kernel
 			is to interact with the hardware(RAM, CPU, Storage Devices, Keyboard) and provides an execution
-			platform to application programs so that the user can be at concinience and do his work effectively without
+			platform to application programs so that the user can be at convenience and do his work effectively without
 			worrying about the resources available. Now if you want to play a game and you click the icon of game so as
 			to
-			open it. To do this the game has to request the kernel to use hardware resources like monitor, keyborad,
+			open it. To do this the game has to request the Kernel to use hardware resources like monitor, keyboard,
 			mouse, GPU
-			& whatever applies to play. Then the kernel evaluates the request and check wheather the permissions game is
+			& whatever applies to play. Then the Kernel evaluates the request and check wheather the permissions game is
 			asking
 			are fine or is there an illegal access of memory or memory is not enough to run the program or if the hardware which is needed to play the game isn't available. If anything related to
 			it is improper it'll send some signal to the monitor that there's an issue with hardware or memory access or
 			so on
 			and stop it right there. Hence in modern OS's the user programs cannot directly play with the low-level hardware of
 			the
-			computer system so as to prevent a crash of working system and never retrieving it back. Ok now we have know
+			computer system so as to prevent a crash of working system and never retrieving it back. Ok now we have knowing
 			what
-			kernel is from laymans prespective, let's have a look at what's the history behind kernel & where it has evolved from in very short.
+			Kernel is from layman's prespective, let's have a look at what's the history behind Kernel & where it has evolved from in very short.
 			</p>
 			<p>
-			<h3> Flash Back of Linux Kernel</h3>
+			<h3> Flash Back on the Linux Kernel</h3>
 			We'll look at the history of Linux in just a snap.
 			Linux is based on Unix but it's not Unix. Unix was only used in the universities & was created at
 			AT&T Bell labs by Ken Thompson, Dennis Ritchie and other team members.
@@ -65,18 +65,18 @@
 				rel="noopener noreferrer"> here</a>)on the internet which lead to one of the biggest open project on
 			internet. People got onboard for providing their contributions to linux where Linus Torvalds became a
 			benevolent dictator & still continues to be one. The Linux Kernel is being developed by <em>Hobbyists</em>,
-			company heired employees to contribute to specific subsystems, engineers and many more around the globe over
+			company-heired employees to contribute to specific subsystems, engineers and many more around the globe over
 			the internet using <em>mails</em> (sending, acknowledging, reviewing, agreeing & disagreeing).<br>
-			Now that the kernel is defined the thing to note in here is that the Linux kernel is open sourced licensed
-			under GPL v2.0 i.e anyone personally can change it, use it and dustribute it for free. If the changes are
+			Now that the Kernel is defined the thing to note in here is that the Linux Kernel is open sourced licensed
+			under GPL v2.0 i.e anyone personally can change it, use it and distribute it for free. If the changes are
 			good then it should be sent to upstream and get the changes accepted by the maintainer of particular
-			subsystem and then the maintainers forward these changes to Linus so as the changes get merged in kernel.
+			subsystem and then the maintainers forward these changes to Linus so as the changes get merged in Kernel.
 			There are three levels of people in development
 			<ol>
 				<li> Linus Torvalds - Creator & Maintainer of Linux Kernel. Accept patches from Subsystem Maintainers
 				</li>
-				<li> Subsytem Maintainers - Subsystem(wifi, usb, ipc, mm) can have one or more maintainers.</li>
-				<li> Contributors/Developers - Send fixes in the kernel after testing to a particular assigned
+				<li> Subsystem Maintainers - Subsystem(wifi, usb, ipc, mm) can have one or more maintainers.</li>
+				<li> Contributors/Developers - Send fixes in the Kernel after testing to a particular assigned
 					maintainer or developer.</li>
 			</ol>
 			Linux is open sourced i.e the source code of linux is free. Anyone can edit, use & redistribute the code.
